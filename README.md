@@ -1,8 +1,8 @@
 # rust 🦀 -> python 🐍 training wheels
 
-You are a data scientist. You are staring down the barrel of an analysis which will be the envy of your company, if only the code to finish running before the heat death of the universe. You haven't profiled the reason why it's taking so long, but that doesn't stop you from believing that writing the code in a new language will be the solution. After all, the engineers keep saying that python is slow.
+You are a data scientist. You are staring down the barrel of an analysis which will be the envy of your company, if only the code to finish running before the heat death of the universe. You haven't profiled the reason why it's taking so long, but that doesn't stop you from believing that writing the code in a new language will be the solution. After all, the engineers keep saying 🐍 slow.
 
-You recall a slack message where your VP of Engineering said "yeah python and rust have a great story. If we are trying to write lower level bindings for python we should look at Rust." You have otherwise never heard of Rust, you never seen C code, have no idea what garbage collection means, and don't know what a complier is. But the engineers keep saying 🐍 is slow and 🦀 is fast.
+You recall a slack message where your VP of Engineering said "yeah python and rust have a great story. If we are trying to write lower level bindings for python we should look at Rust." You have otherwise never heard of Rust, you never seen C code, have no idea what garbage collection means, and don't know what a complier is. But the engineers keep saying 🐍 slow and 🦀 fast.
 
 ## Do Not Cheat
 
