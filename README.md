@@ -14,7 +14,7 @@ Your search of desperation has led you here. I have seen the mighty crustacean i
 
 # Commence your ascension
 
-Goal #1 is to replace a function in python with a function from a library that we will build in Rust. Goal #2 is to measure how much faster it is so you can post how smart you are all over your team's channels.
+Goal #1 is to replace a function in python with a function from a library that we will build in Rust. Goal #2 is to measure how much faster it is so you can post the results on the fridge at work and show everyone how talented of a developer you are.
 
 ## python env
 
@@ -26,11 +26,11 @@ source .env/bin/activate # or whatever you need to do for your OS
 pip install pytest pytest-benchmark maturin
 ```
 
-`maturin`, linked above, is the python-rust go between that we are going to be using here. It's slick, and it has way more features than we'll use here. Go read their docs and bask in their glory.
+[`maturin` is our python-rust go between manager](https://github.com/PyO3/maturin). It's slick, and it has way more features than we'll use here. Go read their docs and bask in their glory.
 
 # Here's your terrible python code.
 
-You are trying to count the number of pairs of characters that occur in a string. Why your code is taking so long to run is beyond me - maybe you are trying to run this on a string trillions upon trillions of characters long. Make a script called `doubles.py` and write the following code there:
+You are trying to count the number of pairs of characters that occur in a string. Why your code is taking so long to run is beyond me - maybe you are trying analyze trillions by trillions of characters. Make a script called `doubles.py` and write the following code there:
 
 ```python
 import string
@@ -100,7 +100,7 @@ Select pyo3.
 
 This should create a few files, notably `Cargo.toml`, `src`, and `pyproject.toml` (hope you weren't using poetry as your env manager lol). Welcome to the world of Rust. At this point, it would be wise to go [read a bit about what Rust is](https://www.rust-lang.org/learn), and about [`cargo`, it's package manager](https://doc.rust-lang.org/cargo/). But for the purposes of this tutorial, all you need to know is 🦀 go brrrrr.
 
-`src/lib.rs` is where we will be writing Rust code. `Cargo.toml` defines the package. To note, in rust you don't have a choice of your env manager - you are using `cargo`, or some wrapper around it. Every language you try from here on out will have a better env management story than python, us 🐍s just have to take the L on that one.
+`src/lib.rs` is where we will be writing Rust code. `Cargo.toml` defines the package, a.k.a. a crate in the rustacean lingo.. To note, in rust you don't have a choice of your env manager - you are using `cargo`, or some wrapper around it. Every language you try from here on out will have a better env management story than python, us 🐍s just have to take the L on that one.
 
 ## actually write some code
 
@@ -224,13 +224,11 @@ It's just ~30x faster doing the exact same algorithm, simple as that. Lean back 
 
 ## find out that numpy was faster all along
 
-Now snap back forward in your chair as you realize, "Wait, python already has a whole module for optimizing computations in C bindings." Numpy has a hilariously fast way of doing this computation. Ready?
+Now snap back forward in your chair as you realize, "Wait, python already has a whole module for optimizing computations in C bindings." Numpy has one if it's classic elegant but head scratching there-is-no-way-that-code-actually-does-that implementations for this problem.
 
 ```bash
 pip install numpy
 ```
-
-I'm not going to split out the cells, add this to your code but put the import at the top like a civilized person.
 
 ```python
 import numpy as np
